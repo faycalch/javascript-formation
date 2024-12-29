@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les fonctions</title>
+</head>
+<body>
+    <script>
+        function salutation() {
+            console.log("salut!!")
+            
+        }
+        salutation()
+        //fonctions fléchés 
+        const salutationFleches = () => console.log("salutation")
+        salutationFleches()
+        function somme(n1,n2) {
+            return n1+n2;
+        }
+        console.log(somme(3,5))
+        const sommeFle = (num1,num2) => num1+num2
+        console.log(sommeFle(12,15))
+        function mult(n1,n2) {
+            return n1*n2;
+        }
+        console.log(mult(6,4))
+        function verif(n) {
+            if (n%2==0) {
+            
+              return true;  
+            }else
+            return false;
+        }
+        console.log(verif(5))
+        const verifFle = (n) => {
+            if (n%2==0) {
+            
+            return true;  
+          }else
+          return false;
+        }
+        console.log(verifFle(18))
+        const verifFlesimple = (n) => n%2==0
+        console.log(verifFlesimple(21))
+    </script>
+</body>
+</html>

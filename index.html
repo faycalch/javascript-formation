@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        console.log("hello world");
+        console.warn("attention! cette action peut avoir des conséquences imprévu")
+        console.error("attention ceci est une erreur")
+        console.info("information le serveur a été redémarer avec succès")
+        // alert("ceci est une alerte")
+        var name = "faycal"
+        var age = 25
+        console.log("je m'appel ", name,"et j'ai", age)
+        console.log("je m'appel"+ name+ "et j'ai "+ age+ " ans")
+        console.log(`je m'appel ${name} et j'ai ${age} ans`)
+        //les conditions
+        const time = new Date().getHours()
+        var grating
+        if (time<10) {
+            grating = "bonjour"
+            
+        }
+        else if (time<20) {
+            grating = "bonne journée"
+            
+        }else{
+            grating = "bonsoir"
+        }
+        console.log(grating)
+        var mod1 = 4; var mod2=5;
+        var moyenne= (mod1+mod2)/2
+        if (moyenne>10) {
+            console.log("Bravo")
+            
+        }
+        else if (moyenne==10) {
+            console.log("passable")
+            
+        }else{
+            console.log("vous allez refaire l'année")
+        }
+        //comparaison total et partielle
+        var nombre = "5"
+        if (nombre== 5) {
+            console.log("comparaison partielle la valeur est égal après conversion")
+        } else {
+            console.log("la valeur est différente")
+        }
+        // condition ternaire
+        nombre==5 ? console.log("comparaison partielle la valeur est égal après conversion") : console.log("la valeur est différente")
+        if (nombre=== 5) { 
+            console.log("comparaison totale la valeur et le type sont égaux")
+        } else {
+            console.log("la valeur ou bien le type sont différent")
+        }
+        //switch case
+        var day
+        switch (new Date().getDay()) {
+            case 0:
+                Day = "dimanche"
+                break;
+            case 1:
+                Day = "lundi"
+                break;
+            case 2:
+                Day = "mardi"
+                break;
+            case 3:
+                Day = "mercredi"
+                break;
+                case 5:
+                Day = "jeudi"
+                break;
+            case 6:
+                Day = "vendredi"
+                break;
+            case 7:
+                Day = "samedi"
+                break;
+            default:
+                console.log("day indefined")
+                break;
+            
+        }
+        console.log("on est le : ", Day)
+        var color = "rouge"
+        switch (color) {
+            case "rouge":
+                console.log("attention!!!")
+                break;
+            case "orange":
+                console.log("cédez le passage")
+                break;
+            case "vert":
+                console.log("allez-y")
+                break;
+            default:
+                console.log("couleur introuvable")
+                break;
+        }
+    </script>
+</body>
+</html>
